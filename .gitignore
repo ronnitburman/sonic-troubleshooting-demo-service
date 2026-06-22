@@ -29,6 +29,10 @@ debian/files
 debian/*.log
 debian/*.substvars
 
+# Python wheel artifacts (sonic-buildimage produces these)
+*.whl
+pip-wheel-metadata/
+
 # OS
 .DS_Store
 Thumbs.db

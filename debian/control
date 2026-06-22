@@ -1,0 +1,15 @@
+Source: sonic-troubleshooting-demo-service
+Section: admin
+Priority: optional
+Maintainer: Ronnit Burman <ronnitburman@gmail.com>
+Build-Depends: debhelper (>= 10), dh-python, python3-all, python3-setuptools
+Standards-Version: 4.1.4
+Homepage: https://github.com/ronnitburman/sonic-troubleshooting-demo-service
+
+Package: sonic-troubleshooting-demo-service
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}, python3-redis, python3-typer, python3-rich
+Description: SONiC troubleshooting demo service
+ A small SONiC demo service that inspects port state, runs simple
+ troubleshooting checks, applies a controlled admin-state change, verifies
+ the result, and restores the original state.

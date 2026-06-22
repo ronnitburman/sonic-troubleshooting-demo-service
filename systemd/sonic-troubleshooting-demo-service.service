@@ -5,7 +5,7 @@ Requires=database.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/local/bin/sonic-troubleshooting-demo-service remediate --port Ethernet0 --target-status down --write-mode cli --restore --hold-seconds 5
+ExecStart=/usr/bin/sonic-troubleshooting-demo-service remediate --port Ethernet0 --target-status down --write-mode cli --restore --hold-seconds 5
 RemainAfterExit=no
 
 [Install]
