@@ -84,11 +84,11 @@ def run_port_checks(port_view: PortView) -> list[Finding]:
             )
         )
 
-    # 5. MTU_MISSING — severity: warning
+    # 5. MTU_MISSING — severity: info (absent in CONFIG_DB means default)
     if "mtu" not in cfg:
         findings.append(
             Finding(
-                severity="warning",
+                severity="info",
                 code="MTU_MISSING",
                 message=f"MTU field missing for port {port}",
                 evidence={"port": port},

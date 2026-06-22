@@ -36,11 +36,11 @@ f = run_port_checks(v)
 assert any(x.code == 'PORT_ADMIN_DOWN' for x in f)
 print('✓ Admin down → PORT_ADMIN_DOWN (info)')
 
-# Missing MTU → MTU_MISSING (warning)
+# Missing MTU → MTU_MISSING (info)
 v = make_view(config={'admin_status': 'up'})
 f = run_port_checks(v)
 assert any(x.code == 'MTU_MISSING' for x in f)
-print('✓ Missing MTU → MTU_MISSING (warning)')
+print('✓ Missing MTU → MTU_MISSING (info)')
 
 # Healthy port → nothing
 v = make_view(config={'admin_status': 'up', 'mtu': '9100'})
@@ -60,7 +60,7 @@ print('✓ All checks.py tests passed')
 ✓ No admin_status → ADMIN_STATUS_MISSING
 ✓ Bogus admin_status → ADMIN_STATUS_INVALID
 ✓ Admin down → PORT_ADMIN_DOWN (info)
-✓ Missing MTU → MTU_MISSING (warning)
+✓ Missing MTU → MTU_MISSING (info)
 ✓ Healthy port → no findings
 
 ✓ All checks.py tests passed

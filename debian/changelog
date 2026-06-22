@@ -1,0 +1,5 @@
+sonic-troubleshooting-demo-service (0.1.0-1) unstable; urgency=medium
+
+  * Initial demo service package for SONiC VS.
+
+ -- Ronnit Burman <ronnitburman@gmail.com>  Tue, 16 Jun 2026 12:00:00 -0400

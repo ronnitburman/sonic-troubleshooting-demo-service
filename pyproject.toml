@@ -13,6 +13,9 @@ dependencies = [
 [project.scripts]
 sonic-troubleshooting-demo-service = "sonic_troubleshooting_demo_service.main:app"
 
+[tool.setuptools.packages.find]
+include = ["sonic_troubleshooting_demo_service*"]
+
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
