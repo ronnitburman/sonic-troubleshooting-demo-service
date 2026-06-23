@@ -34,3 +34,6 @@ $(SONIC_TROUBLESHOOTING_DEMO_SERVICE_DEB)_SRC_PATH = $(SRC_PATH)/sonic-troublesh
 
 
 SONIC_DPKG_DEBS += $(SONIC_TROUBLESHOOTING_DEMO_SERVICE_DEB)
+
+# Bake the self-contained systemd service package into the SONiC-VS KVM image.
+sonic-vs.img.gz_INSTALLS += $(SONIC_TROUBLESHOOTING_DEMO_SERVICE_DEB)
