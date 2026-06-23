@@ -1,3 +1,9 @@
+sonic-troubleshooting-demo-service (0.1.0-2) unstable; urgency=medium
+
+  * Fix executable and systemd unit installation for SONiC image integration. 
+
+ -- Ronnit Burman <ronnitburman@gmail.com>  Tue, 23 Jun 2026 15:54:05 +0000
+
 sonic-troubleshooting-demo-service (0.1.0-1) unstable; urgency=medium
 
   * Initial demo service package for SONiC VS.
