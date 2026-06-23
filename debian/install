@@ -1,2 +1,2 @@
 systemd/sonic-troubleshooting-demo-service.service lib/systemd/system/
-debian/scripts/sonic-troubleshooting-demo-service usr/bin/
+scripts/sonic-troubleshooting-demo-service usr/bin/
