@@ -10,6 +10,11 @@ dependencies = [
     "python-dotenv>=1.0.0"
 ]
 
+[project.optional-dependencies]
+testing = [
+    "pytest>=8.0.0"
+]
+
 [project.scripts]
 sonic-troubleshooting-demo-service = "sonic_troubleshooting_demo_service.main:app"
 
